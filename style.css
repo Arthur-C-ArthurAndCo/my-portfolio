@@ -48,6 +48,7 @@ hr {
     border: 0;
 }
 p {
+    width: 75%;
     font-size: 25px;
 }
 
