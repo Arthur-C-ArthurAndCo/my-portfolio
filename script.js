@@ -1,8 +1,5 @@
 /* La partie ci-dessous a été finalement modifié par l'IA pour pouvoir émettre l'effet de combo que je recherchais */
 
-const namespace = "arthur-corroyez-portfolio-2026";
-const key = "remerciements";
-
 let nbLikes = 0;
 const boutonLike = document.getElementById("btn-like");
 
@@ -16,27 +13,9 @@ megaFlame.textContent = "🔥";
 document.body.appendChild(megaFlame);
 
 if (boutonLike) {
-    fetch(`https://api.counterapi.dev/v1/${namespace}/${key}`)
-        .then(response => response.json())
-        .then(data => {
-            if (data && data.value !== undefined) {
-                nbLikes = data.value;
-                boutonLike.textContent = "❤️‍🔥 Remercier le créateur (" + nbLikes + ")";
-            }
-        })
-        .catch(() => {
-            console.log("Impossible de joindre le serveur de score, mode local activé.");
-        });
-
     boutonLike.addEventListener("click", (e) => {
-        fetch(`https://api.counterapi.dev/v1/${namespace}/${key}/up`)
-            .then(response => response.json())
-            .then(data => {
-                if (data && data.value) {
-                    nbLikes = data.value;
-                    boutonLike.textContent = "❤️‍🔥 Remercier le créateur (" + nbLikes + ")";
-                }
-            });
+        nbLikes = nbLikes + 1;
+        boutonLike.textContent = "❤️‍🔥 Remercier le créateur (" + nbLikes + ")";
 
         const currentTime = Date.now();
         if (currentTime - lastClickTime < 400) {
