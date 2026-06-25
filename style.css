@@ -47,6 +47,9 @@ hr {
     height: 5px;
     border: 0;
 }
+p {
+    font-size: 35px;
+}
 
 /* Activités */
 .skills-container {
@@ -78,7 +81,10 @@ hr {
 .skill-tag:hover {
     transform: scale(1.05);
 }
-
+skill-tag-text {
+    color: black;
+    font-size: 18px;
+} 
 /* Zone de pied de page */
 .footer {
     margin-top: 60px;
