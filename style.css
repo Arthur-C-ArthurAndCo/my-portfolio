@@ -56,10 +56,10 @@ p {
     padding-right: 25px;
     font-size: 25px;
 }
-ul {
+stylise {
     text-decoration: underline;
 }
-/* Activités */
+
 .skills-container {
     border: 3px solid #000;
     border-radius: 40px;
@@ -95,7 +95,7 @@ ul {
     font-size: 16px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-/* Zone de pied de page */
+
 .footer {
     margin-top: 60px;
     padding: 20px;
@@ -107,7 +107,6 @@ ul {
     margin: 6px 0;
 }
 
-/* Bouton */
 .like {
     background: #000;
     color: #fff;
@@ -125,6 +124,20 @@ ul {
     box-shadow: 0 0 12px rgb(255, 160, 45);
 }
 
+img {
+    width: 350px;
+    box-shadow: 2px 2px 12px rgb(0,0,0);
+}
+
+.images {
+    width: 95%;
+    margin: 20px auto;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
 
 /* == FAIT AVEC IA (pour plus de style) == */
 
