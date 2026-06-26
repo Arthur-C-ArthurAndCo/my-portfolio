@@ -68,25 +68,27 @@ p {
     justify-content: center;
     gap: 20px;
 }
-.skill-tag {
+.skill-tag h1 {
     background: linear-gradient(135deg, rgb(255, 160, 45), rgb(100, 185, 255));
     color: white;
     padding: 15px 25px;
     border-radius: 20px;
-    font-size: 22px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
     flex: 1;
     min-width: 140px;
     max-width: 220px;
-    transition: transform 0.2s ease;
+    font-size: 22px;
 }
-.skill-tag:hover {
-    transform: scale(1.05);
+.skill-tag p {
+    background: linear-gradient(to right, rgb(0, 200, 30), rgb(0, 90, 164));
+    color: white;
+    padding: 15px 25px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+    flex: 1;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-skill-tag-text {
-    color: black;
-    font-size: 18px;
-} 
 /* Zone de pied de page */
 .footer {
     margin-top: 60px;
